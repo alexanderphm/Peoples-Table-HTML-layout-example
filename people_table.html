@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title>PEOPLE</title>
+	<link href="./images/people_ico.ico" rel="shortcut icon"/>
+    <link type="text/css" rel="stylesheet" href="css/people_table.css">
+	
+	<script type="text/javascript">
+		/*Для подавления выделения текста при клике или двойном клике в IE добавляется атрибут тегу BODY "onselectstart='return false'".
+		Для подавления выделения текста в остальных браузерах используются стили из people_table.css. (".static #page_wrapper")*/
+		function ieDetection() {
+			if (navigator.userAgent.search("MSIE") >= 0){
+				document.body.setAttribute("onselectstart", "return false");
+			}
+        }
+        window.onload = ieDetection;
+		
+		function a_btn_onClick(obj) {
+			if(obj === undefined || obj.className === undefined) return false;
+			obj.className = (obj.className == "a_btn follow") ? 'a_btn unfollow' : 'a_btn follow';
+		}
+    </script>
+</head>
+
+<!-- "onselectstart='return false'" added in JavaScript for support IE only. -->
+<body class="static">
+	<div id="page_wrapper">
+		<p id="header"><img src="./images/people.png" alt="" />PEOPLE</p>
+		<table>
+			<tr>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>Ideas</th>
+				<th>Following</th>
+				<th>Followers</th>
+			</tr>
+			<tr>
+				<td><img src="./images/john_adams.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>John Adams
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>102</p>
+				</td>
+				<td>0</td>
+				<td>50</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/kevin_malcolm.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>Kevin Malcolm
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>1472</p>
+				</td>
+				<td>20</td>
+				<td>19</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td><img src="./images/james_madison.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>James Madison
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>32</p>
+				</td>
+				<td>0</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/james_monroe.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>James Monroe
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>3086</p>
+				</td>
+				<td>53</td>
+				<td>1059</td>
+				<td>45</td>
+			</tr>
+			<tr>
+				<td><img src="./images/andrew_jackson.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>Andrew Jackson
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>102</p>
+				</td>
+				<td>0</td>
+				<td>50</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/john_adams.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>John Adams
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>102</p>
+				</td>
+				<td>0</td>
+				<td>50</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/kevin_malcolm.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>Kevin Malcolm
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p style="margin:0;"><img src="./images/columns.png" alt="Ili"/>1472</p>
+				</td>
+				<td>20</td>
+				<td>19</td>
+				<td>26</td>
+			</tr>
+			<tr>
+				<td><img src="./images/james_madison.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>James Madison
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>32</p>
+				</td>
+				<td>0</td>
+				<td>2</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/james_monroe.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>James Monroe
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>3086</p>
+				</td>
+				<td>53</td>
+				<td>1059</td>
+				<td>45</td>
+			</tr>
+			<tr>
+				<td><img src="./images/andrew_jackson.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p>Andrew Jackson
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>102</p>
+				</td>
+				<td>0</td>
+				<td>50</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td><img src="./images/john_adams.jpg" alt="no photo"/></td>
+				<td colspan="2">
+					<p class="ppp">John Adams
+						<a class="a_btn follow" onclick="a_btn_onClick(this)">&nbsp;</a>
+					</p>
+					<p><img src="./images/columns.png" alt="Ili"/>102</p>
+				</td>
+				<td>0</td>
+				<td>50</td>
+				<td>0</td>
+			</tr>
+			<tr style="display:none;">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>SHOW MORE</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+</body>
